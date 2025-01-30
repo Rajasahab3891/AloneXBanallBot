@@ -22,10 +22,10 @@ from datetime import datetime
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
-API_ID = int(getenv("API_ID", "4110592"))
-API_HASH = getenv("API_HASH", "aa7c849566922168031b95212860ede0")
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-OWNER_ID = getenv("OWNER_ID", None)
+API_ID = int(getenv("API_ID", "28196711"))
+API_HASH = getenv("API_HASH", "a8a23bffb12aae7a4c72fa2b4cd538a1")
+BOT_TOKEN = getenv("BOT_TOKEN", "7990367196:AAFIP8634_uI3Fo1QSMtHmGDlu93Sa_xTzs")
+OWNER_ID = getenv("OWNER_ID", "7738551811")
 OP  = [int(g), int(gg), int(OWNER_ID)]
 #TelegramClient..
 sree = TelegramClient(
@@ -34,16 +34,16 @@ sree = TelegramClient(
     api_hash=API_HASH
 ).start(bot_token=BOT_TOKEN)
 
-Owner = "https://t.me/ALONE_WAS_BOT"
-repo = "https://github.com/TeamAloneOp/AloneXBanallBot/fork"
+Owner = "https://t.me/Expired Viru"
+repo = "https://t.me/Expired_Viru"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/AlonesHeaven"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/TwcChats"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+            file="https://envs.sh/PNV.jpg",
             caption=startxt.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -57,7 +57,7 @@ async def start(event):
     if event.sender.id not in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+            file="https://envs.sh/PNI.jpg",
             caption=startxt2.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -72,12 +72,12 @@ async def start(event):
 
 @sree.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/AlonesHeaven"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/Expired Viru"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://telegra.ph//file/9e8ce3092848a1bc5d9d6.jpg",
+            file="https://envs.sh/PNI.jpg",
             caption=hlptxt.format(event.sender.first_name, event.sender.id),
             link_preview=False,
             buttons=buttns
